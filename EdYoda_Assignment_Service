@@ -1,0 +1,5 @@
+Service : 
+First need to check the both target port and nodeport status. ( ps -ef | grep 8000 ) 
+As the port is not free, go to the service yaml file of nodeport configuration.
+Change the port accordingly. 
+And rerun the deployment.
