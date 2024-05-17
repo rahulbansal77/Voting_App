@@ -1,0 +1,3 @@
+Deployment : 
+ 	
+kubectl scale rc <replica name> --replicas=5 
