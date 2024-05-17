@@ -1,0 +1,25 @@
+☝️ Delete them in same order 
+1st ► VOTE pod ► Observe what happens both in frontEnd & in Unix
+ 
+Deleted pod manually, as vote pod is deployed in replica=1 hence vote pod again create automatically. so there is no impact after deleting vote pod manually.
+ 
+ 
+2nd ► WORKER pod  ► Observe what happens both in frontEnd & in Unix
+ 
+Worker pod is deployed with replica=1 hence after deleting pod manually worker pod recreated again.
+ 
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+ 
+old:
+worker-6fc5d5b668-dm84m   1/1     Running   0          13m
+ 
+after deleting pod: 
+worker-6fc5d5b668-qj8t2   1/1     Running   0          24s
+ 
+3rd ► DB pod ► Observe what happens both in frontEnd & in Unix"
+ 
+Vote/Result interface was opening but result interface was not udating correct values after vote.
+ 
+ 
+Vote: http://52.77.234.211:31000/
+Result: http://52.77.234.211:31001/	
